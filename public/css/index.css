@@ -1,0 +1,279 @@
+
+html, body , .container {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    position: fixed;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+
+    grid-template-areas:
+      "menu menu menu main main main main main main main main"
+      "menu menu menu main main main main main main main main"
+      "menu menu menu main main main main main main main main"
+      "menu menu menu main main main main main main main main"
+      "menu menu menu main main main main main main main main"
+      "menu menu menu main main main main main main main main"
+      "menu menu menu main main main main main main main main"
+      "menu menu menu main main main main main main main main"
+      "menu menu menu main main main main main main main main"
+      "menu menu menu main main main main main main main main"
+      "menu menu menu main main main main main main main main";
+  }
+
+
+.main{
+  
+    grid-area: main;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.who{
+  font-family: 'Roboto Condensed', sans-serif;
+margin-left: 2vh;
+margin-right: 2vh;
+  font-size: 4vh;
+}
+.who h1{
+  color: #1CA5EA;
+}
+
+.inicio{
+    text-align:center;
+
+}
+.inicio .texto{
+    color: gray;
+    font-size: 6vh;
+}
+.inicio .texto1{
+    color: #1CA5EA;
+    font-size: 13vh;
+}
+.inicio .texto2{
+    color: gray;
+    font-size: 5vh;
+}
+  
+  .menu { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+
+    grid-template-areas:
+      "intro intro intro"
+      "intro intro intro"
+      "item item item"
+      "item item item"
+      "item item item"
+      "item item item"
+      "item item item"
+      "item item item"
+      "item item item"
+      "fin fin fin"
+      "fin fin fin";  
+    
+    grid-area: menu;background-color: #001EAF; }
+  
+  .boots{
+    overflow: hidden;
+    min-height: 80%;
+    max-height: 80%;
+    max-width: 85%;
+    min-width: 85%;
+    height: 80%;
+    width: 85%;
+
+    background-color: gray;
+  
+
+  }
+
+  
+  .caru{
+    overflow: hidden;
+    margin-top: 2vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    min-height: 80%;
+    max-height: 80%;
+    max-width: 85%;
+    min-width: 85%;
+    height: 80%;
+    width: 85%;
+  }
+
+ 
+  .fin{
+    grid-area: fin;
+    margin: 1vh;
+    font-family: 'Montserrat', sans-serif;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .enlaces h3{
+    margin: 1vh;
+  }
+  .intro{
+    grid-area: intro;
+    margin: 1vh;
+    font-family: 'Montserrat', sans-serif;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+    .cards{
+      min-height: 20vh;
+      min-width: 27vh;
+      max-width: 27vh;
+      max-height: 20vh;
+      margin:1.5vh;
+      box-shadow: 1px 1px 2px 1px rgba(0,0,0,.25);
+      display: flex;
+      flex-direction: column;
+      transition: 0.3s;
+      justify-content: center;
+   
+    }
+
+   .servicess{
+    min-height: 80%;
+    max-height: 80%;
+    height: 80%;
+    min-width: 95%;
+    max-width: 95%;
+    width: 95%;
+
+ 
+
+   }
+   .servicess .ss{
+     margin: 1vh;
+    min-height: 10vh;
+    max-height:10vh;
+    height: 10vh;
+    min-width:99%;
+    max-width: 99%;
+    width: 99%;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+   }
+   .servicess .ss p{
+    text-align: center;
+    color: gray;
+   }
+
+   
+   
+    .cards img{
+      margin-top: 2vh;
+      margin-bottom: 1vh;
+      overflow: hidden;
+      object-fit: contain;
+    }
+
+    .cards div{
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-family: 'Roboto Condensed', sans-serif;
+      background-color: #1CA5EA;
+    }
+    .cards:hover {
+      box-shadow: 0 8px 16px 0 rgba(24, 39, 126, 0.226);
+    }
+    
+  /* For presentation only, no need to copy the code below */
+  
+
+  
+  .item { grid-area: item;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    min-height: 85%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   
+}
+.item :hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+.itemes{
+margin-top: 1vh;
+margin-bottom: 1vh;
+font-family: 'Montserrat', sans-serif;
+position: relative;
+background-color: #1CA5EA;
+min-height: 7vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.itemcontent{
+    display: flex;
+   
+}
+.itemes p{
+    margin:0;
+    color: white;
+}
+.itemes i{
+    margin-right: 2vh;
+    color: white;
+}
+
+  
+
+
+  #watermark
+{
+ position:fixed;
+ bottom:5px;
+ font-size: 9vh;
+ right:5px;
+ opacity:0.5;
+ z-index:99;
+
+ color:gray;
+}
